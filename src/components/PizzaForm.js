@@ -36,7 +36,7 @@ export default function PizzaForm(props) {
                     onChange={onChange}
                 >
                     <option value="">Pick a size</option>
-                    <option value="s">Small</option>
+                    <option id="s" value="s">Small</option>
                     <option value="m">Medium</option>
                     <option value="l">Large</option>
                     <option value="xl">Extra large</option>

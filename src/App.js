@@ -6,7 +6,6 @@ import formSchema from './validation/FormSchema'
 import Home from './components/Home'
 import PizzaForm from './components/PizzaForm'
 import Orders from './components/Orders'
-import Pizza from './components/Pizza'
 
 const initialValues = {
   name: '',
@@ -95,9 +94,9 @@ useEffect(() => {
         <nav>
           <Link to="/">Home</Link>
           <Link to="/pizza">Order Now</Link>
-          <Link to="/orders">Orders</Link>
+          <Link id="ordersBtn" to="/orders">Orders</Link>
         </nav>
-        <h1>Lambda Eats</h1>
+        <h1>Lambda Eats 🍕</h1>
         <p>Makin' Pizza that's Exponentially Delicious</p>
 
         <Switch>

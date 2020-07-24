@@ -9,7 +9,11 @@ export default function Pizza(props) {
             <p>Size: {details.size}</p>
             <ul>Toppings:
                 {
-                details.toppings
+                details.toppings.map( topping => {
+                    return (
+                        <li>{topping}</li>
+                    )
+                })
                 }
             </ul>
         </div>

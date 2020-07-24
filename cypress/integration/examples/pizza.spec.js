@@ -13,12 +13,18 @@ describe("User can submit orders", () => {
     it("can't submit without size", () => {
         cy.get("#submitBtn").should("be.disabled")
     })
-    it("Incorporates size and toppings", () => {
-      cy.get('select[name="size"]').children("option:nth-of-type(2)").click()
-      cy.get('input[name="pepperoni"]').click()
+    it("Incorporates size", () => {
+      cy.get('select[name="size"]').select("Small")
     })
-    it("submits form", () => {
-        cy.get('#submitBtn').click()
-        cy.get('#orders').contains("test")
+    it("Incorporates multiple toppings", () => {
+        cy.get('input[name="pepperoni"]').click()
+        cy.get('input[name="sausage"]').click()
+      })
+    it("submits form successfully", () => {
+        cy.get('#submitBtn').click({force: true})
+        cy.get('#ordersBtn').click()
+        cy.get('ul').contains("sausage")
+        cy.get('ul').contains("pepperoni")
+
     })
 })
