@@ -31,17 +31,20 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question.
 
 1. In 1-2 sentences, explain what React's `useRouteMatch` hook is used for.
+UseRouteMatch is a method that replicates the url exactly, including its strict and sensitive options. It gives you access to the match data, which means you can use the route outside of a switch.
 1. How would you explain form validation to someone who has never programmed before?
+Form validation is essentially how a webpage confirms that the user has filled out necessary parts of the form and input appropriate information into each section.
 1. In 1-2 sentences, define end to end testing.
+E2E testing simulates the way that an end user is engaging with your website. As opposed to unit, static, and integration testing, E2E deals with how the program functions in its totality.
 
 ## Instructions
 
 ### Task 1: Project Set Up
 
-- [ ] Create a forked copy of this project
-- [ ] Add your team lead as collaborator on Github
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!)
-- [ ] Create a new branch: `git checkout -b <firstName-lastName>`
+- [X] Create a forked copy of this project
+- [X] Add your team lead as collaborator on Github
+- [X] Clone your OWN version of the repository (Not Lambda's by mistake!)
+- [X] Create a new branch: `git checkout -b <firstName-lastName>`
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
 - [ ] Push commits: `git push origin <firstName-lastName>`
 
@@ -49,13 +52,13 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Your finished project must include all of the following requirements:
 
-- [ ] A homepage that has a "/" route and links to your form (button, nav bar, or any other type of link is acceptable)
-- [ ] A form with a "/pizza" route
-- [ ] A name text input field
-- [ ] Validation for name - name must be at least 2 characters
-- [ ] A dropdown for pizza size
-- [ ] A checklist for toppings - at least 4 (hint: name each separately!)
-- [ ] Text input for special instructions
+- [X] A homepage that has a "/" route and links to your form (button, nav bar, or any other type of link is acceptable)
+- [X] A form with a "/pizza" route
+- [X] A name text input field
+- [X] Validation for name - name must be at least 2 characters
+- [X] A dropdown for pizza size
+- [X] A checklist for toppings - at least 4 (hint: name each separately!)
+- [X] Text input for special instructions
 - [ ] An Add to Order button that submits form and returns a database record of name, size, toppings and special instructions
 
 #### Testing MVP
